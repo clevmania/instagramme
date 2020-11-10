@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     private let usernameOrEmailField : UITextField = {
         let field = UITextField()
         field.layer.cornerRadius = Constants.cornerRadius
-        field.placeholder = Constants.emailPlaceholder
+        field.placeholder = Constants.userOrEmailPlaceholder
         field.returnKeyType = .next
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
@@ -178,7 +178,9 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func createAccountButtonPressed(){
-        present(RegisterViewController(), animated: true)
+        let registerVC = RegisterViewController()
+        registerVC.title = Constants.createAccountTitle
+        present(UINavigationController(rootViewController: registerVC), animated: true)
     }
     
     func isValidEmail(email: String) -> Bool {
