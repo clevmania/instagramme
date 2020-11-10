@@ -13,6 +13,10 @@
 		CEC6CF93255A9951001E4C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC6CF91255A9951001E4C0D /* Main.storyboard */; };
 		CEC6CF95255A9953001E4C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC6CF94255A9953001E4C0D /* Assets.xcassets */; };
 		CEC6CF98255A9953001E4C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC6CF96255A9953001E4C0D /* LaunchScreen.storyboard */; };
+		CEC6CFA5255A9DD8001E4C0D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFA4255A9DD8001E4C0D /* ExploreViewController.swift */; };
+		CEC6CFA7255A9E13001E4C0D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFA6255A9E13001E4C0D /* ProfileViewController.swift */; };
+		CEC6CFA9255A9E2A001E4C0D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFA8255A9E2A001E4C0D /* NotificationViewController.swift */; };
+		CEC6CFAB255A9E50001E4C0D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFAA255A9E50001E4C0D /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CEC6CF94255A9953001E4C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC6CF97255A9953001E4C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC6CF99255A9953001E4C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC6CFA4255A9DD8001E4C0D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		CEC6CFA6255A9E13001E4C0D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEC6CFA8255A9E2A001E4C0D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		CEC6CFAA255A9E50001E4C0D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				CEC6CF8F255A9951001E4C0D /* HomeViewController.swift */,
+				CEC6CFA4255A9DD8001E4C0D /* ExploreViewController.swift */,
+				CEC6CFA6255A9E13001E4C0D /* ProfileViewController.swift */,
+				CEC6CFA8255A9E2A001E4C0D /* NotificationViewController.swift */,
+				CEC6CFAA255A9E50001E4C0D /* CameraViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC6CFA5255A9DD8001E4C0D /* ExploreViewController.swift in Sources */,
 				CEC6CF90255A9951001E4C0D /* HomeViewController.swift in Sources */,
+				CEC6CFA9255A9E2A001E4C0D /* NotificationViewController.swift in Sources */,
+				CEC6CFA7255A9E13001E4C0D /* ProfileViewController.swift in Sources */,
+				CEC6CFAB255A9E50001E4C0D /* CameraViewController.swift in Sources */,
 				CEC6CF8C255A9951001E4C0D /* AppDelegate.swift in Sources */,
 				CEC6CF8E255A9951001E4C0D /* SceneDelegate.swift in Sources */,
 			);
