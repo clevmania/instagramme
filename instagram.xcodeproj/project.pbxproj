@@ -95,12 +95,10 @@
 			children = (
 				CEC6CFAC255A9F29001E4C0D /* Auth */,
 				CEC6CFB5255A9FF8001E4C0D /* Home */,
-				CEC6CFB1255A9FC8001E4C0D /* PostsViewController.swift */,
-				CEC6CFB3255A9FD9001E4C0D /* SettingsViewController.swift */,
-				CEC6CFB6255AA031001E4C0D /* SearchViewController.swift */,
-				CEC6CFB8255AA048001E4C0D /* SearchResultViewController.swift */,
+				CEC6CFBF255AA14F001E4C0D /* Post */,
+				CEC6CFC0255AA16C001E4C0D /* Setting */,
+				CEC6CFBE255AA140001E4C0D /* Search */,
 				CEC6CFBA255AA05D001E4C0D /* EditProfileViewController.swift */,
-				CEC6CFBC255AA0BB001E4C0D /* PostEditorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +155,32 @@
 				CEC6CFAA255A9E50001E4C0D /* CameraViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		CEC6CFBE255AA140001E4C0D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6CFB6255AA031001E4C0D /* SearchViewController.swift */,
+				CEC6CFB8255AA048001E4C0D /* SearchResultViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CEC6CFBF255AA14F001E4C0D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6CFB1255A9FC8001E4C0D /* PostsViewController.swift */,
+				CEC6CFBC255AA0BB001E4C0D /* PostEditorViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CEC6CFC0255AA16C001E4C0D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6CFB3255A9FD9001E4C0D /* SettingsViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
