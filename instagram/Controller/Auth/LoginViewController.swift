@@ -144,7 +144,25 @@ class LoginViewController: UIViewController {
             return
         }
         
-        // Implement login logic
+        var username: String? , email: String?
+        
+        if isValidEmail(email: usernameOrEmail) {
+            email = usernameOrEmail
+        }else {
+            username = usernameOrEmail
+        }
+        
+        AuthManager.loginUser(email: email, username: username, password: passField) { success in
+            DispatchQueue.main.async {
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                }else {
+                    let alert = UIAlertController(title: "Login Error", message: "Invalid username or password", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
     }
     
     @objc private func termsButtonPressed(){
@@ -161,6 +179,12 @@ class LoginViewController: UIViewController {
     
     @objc private func createAccountButtonPressed(){
         present(RegisterViewController(), animated: true)
+    }
+    
+    func isValidEmail(email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
     }
 
 }

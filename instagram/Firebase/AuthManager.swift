@@ -6,16 +6,28 @@
 //  Copyright © 2020 Icelod. All rights reserved.
 //
 
-import Foundation
+import FirebaseAuth
 
 class AuthManager {
     static let authManager = AuthManager()
     
-    func registerUser(email: String, password: String){
+    static func registerUser(email: String, password: String){
         
     }
     
-    func loginUser(email: String?, username: String?, password: String){
-        
+    static func loginUser(email: String?, username: String?, password: String, completion: @escaping ((Bool) -> Void)){
+        if let emailAddress = email {
+            Auth.auth().signIn(withEmail: emailAddress, password: password) { authResult, error in
+                guard authResult != nil, error == nil else {
+                    completion(false)
+                    return
+                }
+                    
+                completion(true)
+            }
+        }else if let username = username {
+            // login via username
+            print(username)
+        }
     }
 }
