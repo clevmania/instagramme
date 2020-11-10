@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		CEC6CFB9255AA048001E4C0D /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFB8255AA048001E4C0D /* SearchResultViewController.swift */; };
 		CEC6CFBB255AA05D001E4C0D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFBA255AA05D001E4C0D /* EditProfileViewController.swift */; };
 		CEC6CFBD255AA0BB001E4C0D /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFBC255AA0BB001E4C0D /* PostEditorViewController.swift */; };
+		CEC6CFC2255AB364001E4C0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC6CFC1255AB364001E4C0D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CEC6CFB8255AA048001E4C0D /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		CEC6CFBA255AA05D001E4C0D /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		CEC6CFBC255AA0BB001E4C0D /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		CEC6CFC1255AB364001E4C0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,6 @@
 				BC400D6A049EB35ACA49293E /* Pods-instagram.debug.xcconfig */,
 				B41AEACD2F3A8622CD3F9049 /* Pods-instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +112,7 @@
 				CEC6CF9F255A9A87001E4C0D /* Controller */,
 				CEC6CF94255A9953001E4C0D /* Assets.xcassets */,
 				CEC6CF99255A9953001E4C0D /* Info.plist */,
+				CEC6CFC1255AB364001E4C0D /* GoogleService-Info.plist */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -269,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC6CF98255A9953001E4C0D /* LaunchScreen.storyboard in Resources */,
+				CEC6CFC2255AB364001E4C0D /* GoogleService-Info.plist in Resources */,
 				CEC6CF95255A9953001E4C0D /* Assets.xcassets in Resources */,
 				CEC6CF93255A9951001E4C0D /* Main.storyboard in Resources */,
 			);
