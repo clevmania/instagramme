@@ -39,18 +39,27 @@ class SettingsViewController: UIViewController {
     
     private func logOutUser(){
         DispatchQueue.main.async {
-            AuthManager.logOut { (isLogOutSuccessful) in
-                if isLogOutSuccessful {
-                    let loginVC = LoginViewController()
-                    loginVC.modalPresentationStyle = .fullScreen
-                    self.present(loginVC, animated : true){
-                        self.navigationController?.popToRootViewController(animated: false)
-                        self.tabBarController?.selectedIndex = 0
+            let actionSheet = UIAlertController(title: "Log Out", message: "Are you sure you want to log out", preferredStyle: .actionSheet)
+            
+            actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            actionSheet.addAction(UIAlertAction(title: "Log me out", style: .destructive){ _ in
+                AuthManager.logOut { (isLogOutSuccessful) in
+                    if isLogOutSuccessful {
+                        let loginVC = LoginViewController()
+                        loginVC.modalPresentationStyle = .fullScreen
+                        self.present(loginVC, animated : true){
+                            self.navigationController?.popToRootViewController(animated: false)
+                            self.tabBarController?.selectedIndex = 0
+                        }
+                    }else {
+                        fatalError("Failed to log out user")
                     }
-                }else {
-                    
                 }
-            }
+            })
+            
+            actionSheet.popoverPresentationController?.sourceView = self.tableView
+            actionSheet.popoverPresentationController?.sourceRect = self.tableView.bounds
+            self.present(actionSheet, animated: true)
         }
     }
 
