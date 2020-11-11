@@ -12,8 +12,19 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        createSettingsNavigationButtonItem()
+    }
+    
+    private func createSettingsNavigationButtonItem(){
+        navigationItem.rightBarButtonItem =  UIBarButtonItem(image: UIImage(systemName: "gear"), style: .done, target: self, action: #selector(launchSettingsViewController))
+    }
+    
+    @objc private func launchSettingsViewController(){
+        let settingsVC = SettingsViewController()
+        settingsVC.title = "Settings"
+//        self.present(settingsVC, animated: true)
+        navigationController?.pushViewController(settingsVC, animated: true)
     }
 
 }
