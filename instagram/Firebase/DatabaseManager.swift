@@ -23,7 +23,7 @@ class DatabaseManager {
     ///     - email, username
     ///     - completion: async callback to notify you when a user has sucessfully been created
     static func insertNewUser(with email: String, username: String, completion: @escaping (Bool) -> Void){
-        databaseRef.child(email.safeDatabaseKey()).setValue(["username",username]) { error , _ in
+        databaseRef.child(email.safeDatabaseKey()).setValue(["username":username]) { error , _ in
             if error == nil {
                 // success
                 completion(true)
