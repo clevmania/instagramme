@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="1Pd-vd-fQ5" kind="relationship" relationship="viewControllers" id="Q9p-N3-0hg"/>
@@ -100,7 +100,7 @@
         <scene sceneID="v7l-WE-xiL">
             <objects>
                 <navigationController id="Dxl-1y-hzt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="1xr-gh-cOB"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="1xr-gh-cOB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dt7-ec-1VG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,7 +196,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="person.2" catalog="system" width="64" height="40"/>

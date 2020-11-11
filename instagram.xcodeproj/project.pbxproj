@@ -32,6 +32,7 @@
 		CEC6CFC8255AB9F5001E4C0D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFC7255AB9F5001E4C0D /* DatabaseManager.swift */; };
 		CEC6CFCB255AC951001E4C0D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFCA255AC951001E4C0D /* ViewExtension.swift */; };
 		CEC6CFCE255ACCD0001E4C0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFCD255ACCD0001E4C0D /* Constants.swift */; };
+		CEC6CFD0255B9EBE001E4C0D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6CFCF255B9EBE001E4C0D /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		CEC6CFC7255AB9F5001E4C0D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CEC6CFCA255AC951001E4C0D /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		CEC6CFCD255ACCD0001E4C0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEC6CFCF255B9EBE001E4C0D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			children = (
 				CEC6CFCA255AC951001E4C0D /* ViewExtension.swift */,
 				CEC6CFCD255ACCD0001E4C0D /* Constants.swift */,
+				CEC6CFCF255B9EBE001E4C0D /* StringExtension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				CEC6CFB2255A9FC8001E4C0D /* PostsViewController.swift in Sources */,
 				CEC6CFBB255AA05D001E4C0D /* EditProfileViewController.swift in Sources */,
 				CEC6CFC6255AB9D5001E4C0D /* StorageManager.swift in Sources */,
+				CEC6CFD0255B9EBE001E4C0D /* StringExtension.swift in Sources */,
 				CEC6CFC8255AB9F5001E4C0D /* DatabaseManager.swift in Sources */,
 				CEC6CFB7255AA031001E4C0D /* SearchViewController.swift in Sources */,
 				CEC6CFA7255A9E13001E4C0D /* ProfileViewController.swift in Sources */,

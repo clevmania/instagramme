@@ -108,6 +108,16 @@ class RegisterViewController: UIViewController {
             let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
             return
         }
+        
+        AuthManager.registerUser(username: username, email: emailAddress, password: password) { isUserRegistered in
+            DispatchQueue.main.async {
+                if isUserRegistered {
+                    
+                }else {
+                    
+                }
+            }
+        }
     }
 
 }
