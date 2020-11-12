@@ -9,6 +9,7 @@
 import UIKit
 
 struct Constants {
+    static let NotificationCellIdentifier = "NotificationCell"
     static let instagramUserRef : String = "instagram_users"
     static let createAccountTitle : String = "Create Account"
     static let register : String = "Register"
